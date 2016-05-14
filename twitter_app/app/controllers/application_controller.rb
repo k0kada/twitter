@@ -3,8 +3,22 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  def twitter
-    render text: "hello, world!"
+  def index
+    @users = User.all
   end
 
+  def show
+  end
+
+  def edit
+  end
+
+  def crate
+  end
+
+  def update
+  end
+
+  def destroy
+  end
 end
